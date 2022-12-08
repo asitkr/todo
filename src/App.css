@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(189, 183, 226) 0%,
+    rgb(149, 157, 220) 100%);
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 3em;
+  color: #fff;
+}
+
+.checked {
+  font-size: 2px;
+  text-decoration: line-through !important;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  background: transparent;
+}
+
+input:focus {
+  outline: none !important;
+  color: #fff;
+  font-weight: 400;
+  background: transparent;
+}
+
+input::placeholder {
+  color: #e2e2e2;
+}
+
+.items {
+  width: 100%;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  color: #fff;
+  font-size: 20px;
+}
+
+.items:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.items:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.items:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+p {
+  word-break: break-all !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.edit {
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.delete {
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 7px 5px;
+  }
+
+  .items {
+    width: 100%;
+  }
+}
